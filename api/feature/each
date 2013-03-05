@@ -1,0 +1,10 @@
+---
+title : each
+layout : function
+---
+
+```
+[array each:^{
+  return hoge;
+}]
+```
