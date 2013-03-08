@@ -8,11 +8,10 @@ routes = require 'routes'
 module.exports = class Application extends Chaplin.Application
   # Set your application name here so the document title is set to
   # “Controller title – Site title” (see Layout#adjustTitle)
-  title: 'Brunch example application'
+  title: 'Overline'
 
   initialize: ->
     super
-
     # Initialize core components.
     @initDispatcher controllerSuffix: '-controller'
     @initLayout()
