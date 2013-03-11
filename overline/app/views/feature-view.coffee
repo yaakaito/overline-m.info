@@ -6,3 +6,4 @@ module.exports = class FeatureView extends View
   tagName: 'article'
   className: 'feature'
   template: template
+  container: '#feature-container'

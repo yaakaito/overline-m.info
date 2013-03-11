@@ -3,7 +3,9 @@ FeatureView = require 'views/feature-view'
 Feature = require 'models/feature'
 
 module.exports = class FeatureController extends Controller
-  initialize: ->
-    super
-    @model = new Feature { title: 'ああああ' }
-    @view = new FeatureView { model: @model}
+  show: (params)->
+    console.log "aaa"
+    @model = new Feature { title: params.featureName }
+    @view = new FeatureView {
+      model: @model 
+    }
