@@ -3,6 +3,6 @@ template = require 'views/templates/feature'
 
 module.exports = class FeatureView extends View
   autoRender: yes
+  tagName: 'article'
   className: 'feature'
-  container: '#feature-container'
   template: template
