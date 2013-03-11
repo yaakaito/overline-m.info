@@ -4,8 +4,8 @@ Feature = require 'models/feature'
 
 module.exports = class FeatureController extends Controller
   show: (params)->
-    console.log "aaa"
-    @model = new Feature { title: params.featureName }
+    @model = new Feature { title: 'each' }
     @view = new FeatureView {
       model: @model 
     }
+    @model.fetch()
