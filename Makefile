@@ -3,7 +3,6 @@ all: generate
 clean:
 	rm -rf _deploy
 	mkdir _deploy
-	mkdir _deploy/front
 	mkdir _deploy/api
 
 generate: clean
