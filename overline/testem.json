@@ -1,0 +1,9 @@
+{
+  "framework" : "mocha",
+  "src_files" : [
+    "public/javascripts/vendor.js",
+    "public/javascripts/app.js",
+    "public/test/javascripts/test-vendor.js",
+    "public/test/javascripts/test.js"
+  ]
+}

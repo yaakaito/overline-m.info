@@ -1,19 +1,19 @@
 HeaderView = require 'views/header-view'
 mediator = require 'mediator'
 
-class HeaderViewTest extends HeaderView
+class HogeTest extends HeaderView
   renderTimes: 0
 
   render: ->
     super
     @renderTimes += 1
 
-describe 'HeaderView', ->
+describe 'view2', ->
   beforeEach ->
-    @view = new HeaderViewTest
+    @view = new HogeTest
 
   afterEach ->
     @view.dispose()
 
-  it 'should display 1 links', ->
+  it 'should display 6 links', ->
     expect(@view.$el.find 'a').to.have.length 1
